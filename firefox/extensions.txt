@@ -1,0 +1,14 @@
+Ublock origin
+Bitwarden
+ClearURLs
+Consent-O-Matic
+Cookies-AutoDelete
+Decentraleyes
+Facebook Container
+Google Container
+HTTPS Everywhere
+Privacy Badger
+PushBullet
+Return Youtube Dislike
+SponsorBlock
+Universal Bypass
