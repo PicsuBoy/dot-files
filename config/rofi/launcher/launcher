@@ -1,1 +1,0 @@
-rofi -theme "/home/picsu/.config/rofi/launcher/launcher.rasi" -show drun -modi drun -show-icons
