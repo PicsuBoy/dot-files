@@ -1,0 +1,11 @@
+#!bin/bash
+export COLORS_C1=#FFF289
+
+export COLORS_C2=#000500
+export COLORS_C2_L1=#111111
+export COLORS_C2_L2=#222222
+export COLORS_C2_T1=#000500F2
+
+export COLORS_C3=#EEEEEE
+export COLORS_C3_D1=#969696
+export COLORS_C3_D2=#3D3D3D
