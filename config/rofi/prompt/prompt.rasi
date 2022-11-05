@@ -1,0 +1,73 @@
+/*******************************************************************************
+ * ROUNDED THEME FOR ROFI 
+ * User                 : LR-Tech               
+ * Theme Repo           : https://github.com/lr-tech/rofi-themes-collection
+ *******************************************************************************/
+
+
+* {
+
+    background-color:   transparent;
+    margin:                         0;
+    padding:                         0;
+    location:       center;
+    position:                       center;
+ horizontal-align:               0.5;
+    vertical-align:                 0.5;
+    font: "FiraCode 13";  
+}
+
+window {
+    background-color:   ${COLORS_B1_T1};
+
+    transparency: "real";
+    border-radius:               25%;
+    fullscreen:                  false;
+    width:                       16%;
+}
+
+mainbox {
+    spacing:                     3%;
+    padding:                     3%;
+    children: ["message" , "listview"]; 
+}
+
+
+textbox {
+    text-color:                  ${COLORS_F1};
+    blink:                       true;
+    markup:                      true;
+}
+
+listview {
+    cycle:                          true;
+    dynamic:                        true;
+    layout: vertical;
+    lines: 1;
+    columns: 2;
+    spacing: 1.7%;
+    padding: 0 1.1%;
+    reverse:                     false;
+}
+
+element {
+    padding: 10px;
+    width: 50px;
+    border-radius:  10%;
+    text-color:                  ${COLORS_F1};
+
+    children: ["element-text"]; 
+}
+
+
+element selected normal, element selected active {
+    background-color:   ${COLORS_C1};
+    text-color: ${COLORS_F1_D5};
+}
+
+
+element-text {
+    text-color: inherit;
+font: "Font Awesome 6 Free Solid 16";  
+}
+

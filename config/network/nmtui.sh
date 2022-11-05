@@ -1,0 +1,1 @@
+xterm -e sudo nmtui;
