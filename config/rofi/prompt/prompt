@@ -1,0 +1,41 @@
+#!/bin/bash
+#
+# A rofi powered menu to execute power related action.
+# Uses: amixer mpc poweroff reboot rofi rofi-prompt
+
+
+chosen=$(printf '%s;%s;%s;%s;%s\n' "$POWER_OFF" "$REBOOT" "$LOCK" "$SUSPEND" "$LOG_OUT" \
+    | rofi -theme-str '@import "/home/picsu/.config/rofi/power/power.rasi"' \
+           -dmenu \
+           -sep ';' \
+           -selected-row 2)
+
+case "$chosen" in
+    "$POWER_OFF")
+	    echo "poweroff ";
+    	    rofi-prompt --query 'Shutdown?' && poweroff
+        ;;
+
+    "$REBOOT")
+
+	    echo "reboot";
+        rofi-prompt --query 'Reboot?' && reboot
+        ;;
+
+    "$LOCK")
+        # TODO Add your lockscreen command.
+        ;;
+
+    "$SUSPEND")
+        # Pause music and mute volume before suspending.
+        mpc --quiet pause
+        amixer set Master mute
+        # TODO Add your suspend command.
+        ;;
+
+    "$LOG_OUT")
+        # TODO Add your log out command.
+        ;;
+
+    *) exit 1 ;;
+esac

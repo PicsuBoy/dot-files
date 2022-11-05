@@ -1,0 +1,11 @@
+/** Basic config file **/
+
+configuration {
+  show-icons: true;
+  icon-theme: "Papirus";
+  display-drun: "  ";
+  display-window: "﩯 ";
+  display-combi: "  ";
+font: "Font Awesome 6 Free Solid 14";  
+}
+@theme "/home/picsu/.local/share/rofi/themes/rounded-yellow-dark.rasi"
